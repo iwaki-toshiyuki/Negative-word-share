@@ -68,3 +68,5 @@ group :development do
 end
 gem 'pg'
 gem 'tailwindcss-rails'
+gem 'sorcery', '0.14.0'
+gem 'pry-byebug'
