@@ -1,12 +1,11 @@
 .top-wrapper {
-  background-color: #90cdf4;
-  height: calc(100vh - 134px);
+  background:linear-gradient(to top, rgba(91, 238, 240, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url('sad.jpg') center;
+  height: calc(225vh - 200px);
   position: relative;
-  background-position: center;
 
   .top-inner-text {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -16,6 +15,6 @@
 
     @media screen and (max-width: 767px) {
       font-size: 2.0rem;
+      }
     }
   }
-}
