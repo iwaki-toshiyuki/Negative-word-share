@@ -2,3 +2,6 @@
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+.container {
+  background: linear-gradient(to top, rgba(91, 238, 240, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%);
+}
