@@ -5,13 +5,10 @@
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">
-            <%= board.title %>
+            <%= link_to board.title, board_path(board) %>
           </a>
         </h4>
-        <div class='mr10 float-right'>
-          <a href="#"><%= icon 'fas', 'trash', class: 'pr-1' %></a>
-          <a href="#"><%= icon 'fa', 'pen' %></a>
-        </div>
+        <%= render 'crud_menus', board: board %>
         <ul class="list-inline">
           <li class="list-inline-item">
             <%= icon 'far', 'user' %>
