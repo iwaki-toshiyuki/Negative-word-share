@@ -54,3 +54,10 @@ ja:
       title: 'プロフィール'
     edit:
       title: 'プロフィール編集'
+  pages:
+    terms:
+      title: '利用規約'
+    privacy_policy:
+      title: 'プライバシーポリシー'
+    inquire:
+      title: 'お問い合わせ'
