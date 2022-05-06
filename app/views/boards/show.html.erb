@@ -1,4 +1,4 @@
-<div class="container pt-5">
+<div class="container1 pt-5">
   <div class="row mb-3">
     <div class="col-lg-8 offset-lg-2">
       <h1><%= t('.title') %></h1>
@@ -28,7 +28,7 @@
   <%= render 'comments/form', { board: @board, comment: @comment } %>
 
   <!-- コメントエリア -->
-  <div class="row">
+  <div class="container">
       <div class="col-lg-8 offset-lg-2">
         <table id="js-table-comment" class="table">
           <%= render partial: 'comments/comment' , collection: @comments %>
