@@ -78,3 +78,5 @@ gem 'kaminari'
 gem 'ransack'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'high_voltage'
+
