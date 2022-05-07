@@ -22,3 +22,12 @@ end
       body: "本文#{index}"
   )
 end
+
+User.create!(
+  first_name: 'admin',
+  last_name: 'iwaki',
+  email: 'admin@example.com',
+  role: 'admin',
+  password: '19911018',
+  password_confirmation: '19911018'
+)
