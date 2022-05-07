@@ -22,5 +22,8 @@
   "homepage": "https://github.com/iwaki-toshiyuki/Negative-word-share#readme",
   "devDependencies": {
     "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "admin-lte": "^3.0"
   }
 }
