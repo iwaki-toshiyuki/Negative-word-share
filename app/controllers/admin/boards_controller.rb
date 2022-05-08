@@ -20,9 +20,8 @@ class Admin::BoardsController < Admin::BaseController
   def show; end
 
   def destroy
-    @board = current_user.boards.find(params[:id])
     @board.destroy!
-    redirect_to admin_boards_path, success: t('defaults.message.deleted', item: Board.model_name.human),status: :see_other
+    redirect_to admin_boards_path, success: t('defaults.message.deleted', item: Board.model_name.human), status: :see_other
   end
 
   private
