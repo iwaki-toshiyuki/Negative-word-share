@@ -28,7 +28,7 @@ module ApplicationHelper
       ],
       og: {
         title: 'Negative_word_share',
-        description: '人生で傷ついた言葉を共有してみんななぐさめ合うサービス',
+        description: '人生で傷ついた言葉を共有してみんなでなぐさめ合うサービス',
         type: 'website',
         url: request.original_url,
         image: image_url('https://i.gyazo.com/c02a9c9c3f14d841019edb69e0682818.png'),
