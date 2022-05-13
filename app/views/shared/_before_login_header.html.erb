@@ -3,16 +3,17 @@
     <%= link_to root_path, class: 'navbar-brand' do %>
       <%= image_tag 'don.jpg',size: '70x50' %>
     <% end %>
-
     <button class='navbar-toggler' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto main-nav align-items-center">
         <li class="nav-item">
           <%= link_to (t 'defaults.login'), login_path ,class: 'nav-link' %>
         </li>
       </ul>
+      <a href="https://twitter.com/share?url=https://negative-word-share.com" class="twitter-share-button"
+      data-text="みんなでなぐさめ合おう！！"  data-size="large" data-hashtags="Negative_word_share"data-show-count="false"></a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </nav>
