@@ -13,7 +13,7 @@ class Admin::BoardsController < Admin::BaseController
       redirect_to admin_boards_path, success: t('defaults.message.updated', item: Board.model_name.human)
     else
       flash.now['danger'] = t('defaults.message.not_updated', item: Board.model_name.human)
-      render :edit,status: :unprocessable_entity
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -21,7 +21,8 @@ class Admin::BoardsController < Admin::BaseController
 
   def destroy
     @board.destroy!
-    redirect_to admin_boards_path, success: t('defaults.message.deleted', item: Board.model_name.human), status: :see_other
+    redirect_to admin_boards_path, success: t('defaults.message.deleted', item: Board.model_name.human),
+                                   status: :see_other
   end
 
   private
