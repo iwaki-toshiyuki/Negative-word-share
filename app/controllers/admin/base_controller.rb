@@ -10,10 +10,9 @@ class Admin::BaseController < ApplicationController
     redirect_to admin_login_path, status: :unprocessable_entity
   end
 
-  def check_admin # admin権限でない場合はトップページに遷移させる
-    unless current_user.admin?
-      redirect_to root_path,
-                  warning: t('defaults.message.not_authorized', status: :see_other)
-    end
+  def check_admin
+    return if current_user.admin?
+
+    redirect_to root_path, warning: t('defaults.message.not_authorized', status: :see_other)
   end
 end

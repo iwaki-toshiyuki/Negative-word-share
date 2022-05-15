@@ -13,3 +13,13 @@ Style/FrozenStringLiteralComment:
 
 Style/Documentation:
   Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
+
+MethodLength:
+  CountComments: true
+  Max: 25
