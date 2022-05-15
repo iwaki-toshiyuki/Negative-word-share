@@ -1,24 +1,23 @@
-# README
+サービス概要
+自分の人生で他人から言われて傷ついた言葉を掲示板にシェアしてもらって
+その内容をコメントで慰め合うというサービスです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+登場人物
+エンドユーザー
+今までに他人の言葉で傷ついたことがある人で
+その言葉をシェアしたい人
 
-Things you may want to cover:
+ユーザーが抱える課題
+人生で傷ついた言葉を言われて、そのことがフラッシュバックして
+ドラウマとなり、中々人前で話すことができない。もしくは良い人間関係を構築できない。
 
-* Ruby version
+解決方法
+このサービスの掲示板で他人から受けた傷ついた言葉を出してもらって
+その内容をコメントで慰め合う。
 
-* System dependencies
+プロダクト
+人生のトラウマから解放されて、前を向いて歩いてもらうためのWebアプリケーション
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+マーケット
+他人の言葉で傷ついた人。
+またそのことが原因で人間関係に自信のない人。
