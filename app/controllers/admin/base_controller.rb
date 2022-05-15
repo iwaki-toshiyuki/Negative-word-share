@@ -7,10 +7,12 @@ class Admin::BaseController < ApplicationController
 
   def not_authenticated
     flash[:warning] = t('defaults.message.require_login')
-    redirect_to admin_login_path,status: :unprocessable_entity
+    redirect_to admin_login_path, status: :unprocessable_entity
   end
 
-  def check_admin # admin権限でない場合はトップページに遷移させる
-    redirect_to root_path,  warning: t('defaults.message.not_authorized', status: :see_other)  unless current_user.admin?
+  def check_admin
+    return if current_user.admin?
+
+    redirect_to root_path, warning: t('defaults.message.not_authorized', status: :see_other)
   end
 end

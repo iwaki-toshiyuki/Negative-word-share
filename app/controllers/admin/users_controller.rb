@@ -13,7 +13,7 @@ class Admin::UsersController < ApplicationController
       redirect_to admin_users_path, success: t('defaults.message.updated', item: User.model_name.human)
     else
       flash.now['danger'] = t('defaults.message.not_updated', item: User.model_name.human)
-      render :edit,status: :unprocessable_entity
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -21,7 +21,8 @@ class Admin::UsersController < ApplicationController
 
   def destroy
     @user.destroy!
-    redirect_to admin_users_path, success: t('defaults.message.deleted', item: User.model_name.human,status: :see_other)
+    redirect_to admin_users_path,
+                success: t('defaults.message.deleted', item: User.model_name.human, status: :see_other)
   end
 
   private
