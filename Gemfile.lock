@@ -260,6 +260,8 @@ GEM
     request_store (1.5.1)
       rack (>= 1.4)
     rexml (3.2.5)
+    roboto (1.0.1)
+      rails (>= 4.2)
     rubocop (1.29.1)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
@@ -350,6 +352,7 @@ DEPENDENCIES
   rails (~> 7.0.2, >= 7.0.2.4)
   rails-i18n
   ransack
+  roboto
   rubocop
   sitemap_generator
   sorcery (~> 0.16.0)
