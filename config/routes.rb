@@ -26,4 +26,5 @@ Rails.application.routes.draw do
     resources :boards, only: %i[index edit update show destroy]
     resources :users, only: %i[index edit update show destroy]
   end
+  get 'sitemap', to: redirect('https://s3-ap-northeast-1.amazonaws.com/s3negative/sitemaps/sitemap.xml.gz')
 end
