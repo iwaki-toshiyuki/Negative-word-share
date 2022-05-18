@@ -10,12 +10,7 @@ SitemapGenerator::Sitemap.adapter = SitemapGenerator::AwsSdkAdapter.new(
 )
 
 SitemapGenerator::Sitemap.create do
-  add for_customer_articles_path, priority: 0.7, changefreq: 'daily'
-
-  Article.where(status: 1).find_each do |article|
-    add for_customer_article_path(article), priority: 0.7, lastmod: article.updated_at, changefreq: 'daily'
-  end
-
+  
   # Put links creation logic here.
   #
   # The root path '/' and sitemap index file are added automatically for you.
