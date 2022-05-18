@@ -35,3 +35,4 @@
 
 # Ignore sitemap file
 public/sitemap.xml.gz
+/.env
