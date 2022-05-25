@@ -86,5 +86,6 @@ gem 'tailwindcss-rails'
 gem 'sitemap_generator'
 gem 'whenever'
 gem 'roboto'
-gem 'aws-sdk'
+gem 'fog-aws'
+gem "aws-sdk-s3", require: false 
 gem 'dotenv-rails'
