@@ -36,3 +36,4 @@
 # Ignore sitemap file
 public/sitemap.xml.gz
 /.env
+node_modules/
